@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    background: #444;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+}
+
+.content-section {
+    display: flex; /* Align items horizontally */
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically align text and image */
+    margin: 20px;
+    gap: 20px; /* Space between text and image */
+}
+
+/* Styling the image */
+.content-section img {
+    max-width: 200px; /* Make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Styling the text */
+.content-section p {
+    flex: 1; /* Allow text to take up remaining space */
+    margin: 0;
+}
+
+.right-image {
+    float: right; /* Floats the image to the left */
+    margin-right: 15px; /* Adds space between the image and text */
+    margin-bottom: 10px; /* Optional: Space below the image */
+    width: 300px; /* Adjusts the image size */
+    height: auto; /* Maintains aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .content-section {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .content-section img {
+        max-width: 100%; /* Let the image resize to fit smaller screens */
+    }
+}
+
+.contact-form {
+    margin-top: 30px;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #0078d7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #005bb5;
+}
+
+.contact-info {
+    margin-top: 30px;
+    background: #e9f6ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
