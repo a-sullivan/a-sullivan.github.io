@@ -62,18 +62,29 @@ footer {
     margin: 0;
 }
 
+
 .right-image {
-    float: right; /* Floats the image to the left */
-    margin-right: 15px; /* Adds space between the image and text */
-    margin-bottom: 10px; /* Optional: Space below the image */
-    width: 300px; /* Adjusts the image size */
-    height: auto; /* Maintains aspect ratio */
+    float: right; /* Aligns the image and caption to the left */
+    margin-right: 15px; /* Adds space between the image and the text */
+    text-align: center; /* Centers the caption under the image */
+    width: 300px; /* Ensures the container width adjusts to the image width */
+}
+
+.right-image img {
+    display: block; /* Ensures the image is treated as a block element */
+    max-width: 300px; /* Optional: limits the image width */
+    height: auto; /* Maintains the aspect ratio */
 }
 
 .image-caption {
     font-size: 0.9em; /* Makes the caption slightly smaller */
     color: #666; /* Optional: subtle gray color for the caption */
+    line-height: 1.2; /* Consistent line spacing */
     margin-top: 5px; /* Adds space between the image and the caption */
+    word-wrap: break-word; /* Ensures long words break properly */
+    overflow-wrap: break-word; /* Modern equivalent for wrapping */
+    max-width: 100%; /* Restricts the caption width to the image width */
+    display: block; /* Ensures the caption is treated as a block element, allowing wrapping */
 }
 
 @media (max-width: 600px) {
